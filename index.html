@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SL90 | Acoustic 90s Duo</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #f5f5f5;
+            --accent-color: #ffffff;
+            --gray-text: #888;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            text-align: center;
+        }
+
+        /* Hero Banner Section */
+        .hero {
+            width: 100%;
+            background-color: #000;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 3000px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Section Containers */
+        .content-section {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #333;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+
+        /* Tour Dates Styling */
+        .tour-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        .tour-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 10px;
+            border-bottom: 1px solid #222;
+        }
+
+        .date { font-weight: bold; color: var(--gray-text); letter-spacing: 1px; }
+        .venue { font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px; }
+        .location { color: var(--gray-text); font-style: italic; }
+
+        /* Booking Button */
+        .btn-booking {
+            display: inline-block;
+            background: var(--accent-color);
+            color: black;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 30px;
+            transition: opacity 0.3s;
+        }
+
+        .btn-booking:hover {
+            opacity: 0.8;
+        }
+
+        /* Setlist Section */
+        .repertoire-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            font-size: 0.9rem;
+            color: var(--gray-text);
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        /* Social Media & Footer */
+        footer {
+            background-color: #050505;
+            padding: 80px 20px;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .social-links {
+            margin-bottom: 30px;
+        }
+
+        .social-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--gray-text);
+        }
+
+        .copyright {
+            font-size: 0.7rem;
+            color: #444;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 600px) {
+            .tour-item {
+                flex-direction: column;
+                gap: 10px;
+            }
+            h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <img src="banner.jpg" alt="SL90 Acoustic Duo - Playing the Soundtrack of the 90s">
+    </section>
+
+    <section class="content-section">
+        <h2>Live Dates</h2>
+        <ul class="tour-list">
+            <li class="tour-item">
+                <span class="date">MAR 01, 2026</span>
+                <span class="venue">ANNA</span>
+                <span class="location">Amstelveen, NL</span>
+            </li>
+            <li class="tour-item">
+                <span class="date">APR 12, 2026</span>
+                <span class="venue">The Backstage</span>
+                <span class="location">Amsterdam, NL</span>
+            </li>
