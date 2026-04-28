@@ -1,10 +1,20 @@
-/* General Page Styling */
+/* General Page Styling: Fixes background and default text color */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #000000; /* Pitch black background from your image */
+    color: #cccccc; /* Light grey for general readable text */
     padding: 20px;
+    margin: 0;
+}
+
+/* Main 'LIVE DATES' Header: White text */
+h2 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
 }
 
 /* Tour List Container */
@@ -12,29 +22,29 @@ body {
     list-style: none;
     padding: 0;
     max-width: 800px;
+    margin: 0 auto; /* Centers the list on the page */
 }
 
-/* Individual Gig Row */
+/* Individual Gig Row: Line color needs updating */
 .tour-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333333; /* Dark grey line, subtle against black */
 }
 
-/* The "Past Gig" effect */
+/* The "Past Gig" effect for March 1st */
 .past-gig {
-    opacity: 0.5;
-    text-decoration: line-through;
-    color: #777;
-    font-style: italic;
+    opacity: 0.4; /* Fades it significantly */
+    color: #666666; /* Much darker grey, but still visible */
 }
 
-/* Details Styling */
+/* Details Styling: Fixes date/venue visibility */
 .date {
     font-weight: bold;
     min-width: 120px;
+    color: #ffffff; /* Make upcoming dates pure white */
 }
 
 .venue-container {
@@ -46,15 +56,21 @@ body {
     display: block;
     font-weight: bold;
     font-size: 1.1em;
-    color: #000;
+    color: #ffffff; /* Make venue names pure white */
 }
 
 .tour-details {
     font-size: 0.9em;
-    color: #666;
+    color: #aaaaaa; /* Medium-light grey for time/entrance info */
 }
 
 .location {
     text-align: right;
     font-size: 0.9em;
+    color: #aaaaaa; /* Medium-light grey for location */
+}
+
+/* Specific fix to ensure past gigs use their specific color */
+.past-gig .date, .past-gig .venue, .past-gig .tour-details, .past-gig .location {
+    color: inherit; /* Inherits the darker #666666 color from .past-gig */
 }
