@@ -1,0 +1,60 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Tour List Container */
+.tour-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+}
+
+/* Individual Gig Row */
+.tour-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* The "Past Gig" effect */
+.past-gig {
+    opacity: 0.5;
+    text-decoration: line-through;
+    color: #777;
+    font-style: italic;
+}
+
+/* Details Styling */
+.date {
+    font-weight: bold;
+    min-width: 120px;
+}
+
+.venue-container {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.venue {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #000;
+}
+
+.tour-details {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.location {
+    text-align: right;
+    font-size: 0.9em;
+}
